@@ -1,0 +1,64 @@
+{% extends 'msh/notice/index2.html' %}
+
+{% block content %}
+    {% load static %}
+    <div class="mainDiv" style="padding-top: 100px;">
+        <h1 style="font-family: 'Montserrat', sans-serif; font-size: 25px; color: #034f84; font-weight: bold; text-align: center;"><b>HALL NOTICES</b></h1>
+        <div class="centerColFullWidth pl0 pr0">
+            <p><br></p>
+            <section id="global_trade_rules" class="projects-section ">
+                <div class="container light-back"> 
+                    <div class=damn>
+                        <div class="leftpart">
+                            <div newclass> 
+                                <img class="img-responsive pt20 pr0" src="{% static 'notice/h3.jpg' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="rightpart" style="padding-right: 0%;padding-top: 10px">
+                            <div class="featured-text text-lg-left"  data-aos="fade-left">
+                                <h2 class="blue" data-aos="zoom-in" id="about" style="color: #00AEFF;font-size: 20px;"><b>SAMPLE NOTICE 1</b></h2>
+                                <p style="font-size: 18px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis tortor mi, ac gravida magna vulputate consectetur. Vestibulum in pharetra felis, quis porta leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis tortor mi, ac gravida magna vulputate consectetur. Vestibulum in pharetra felis, quis porta leo..<br><br>TLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis tortor mi, ac gravida magna vulputate consectetur. Vestibulum in pharetra felis, quis porta leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr style="color: #0000;">
+            <section id="trade_negotiations" class="projects-section ">
+                <div class="container light-back"> 
+                    <div class=damn>
+                        <div class="leftpart"> 
+                            <div newclass>
+                                <img id="events" class="img-responsive pt20 pr0" src="{% static 'notice/h3.jpg' %}" alt="" data-aos="fade-right">
+                            </div>
+                        </div>
+                        <div class="rightpart">
+                            <div class="featured-text text-lg-left"  data-aos="fade-left">
+                                <h2 class="blue" data-aos="zoom-in" style="color: #00AEFF;padding-top: 10px;font-size: 20px;"><b>SAMPPLE NOTICE 2</b></h2>
+                                <p style="font-size: 18px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis tortor mi, ac gravida magna vulputate consectetur. Vestibulum in pharetra felis, quis porta leo.</p>
+                            </div>
+                        </div>
+                    </div><!-- div end for damn-->
+                </div>
+            </section>
+            <script type="text/javascript" language="javascript1.2">AOS.init();</script> 
+            <script type="text/javascript" language="javascript1.2">
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+{% endblock %}
